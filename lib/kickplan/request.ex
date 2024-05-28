@@ -72,7 +72,7 @@ defmodule Kickplan.Request do
   end
 
   def prepare(%Request{} = req), do: req
-  def prepare(opts) when is_list(opts), do: prepare(opts) |> prepare()
+  def prepare(opts) when is_list(opts), do: build(opts) |> prepare()
 
   defp prepare_body(%Request{body: nil} = req) do
     put_body(req, "")

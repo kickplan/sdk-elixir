@@ -15,7 +15,6 @@ defmodule Kickplan.Adapter do
   @doc """
   TODO
   """
-
   @callback request(Request.method(), Request.url(), Request.headers(), Request.body(), options) ::
               {:ok, Response.status(), Response.headers(), Response.body()} | {:error, term()}
 

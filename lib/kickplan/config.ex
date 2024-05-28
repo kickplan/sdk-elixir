@@ -13,14 +13,14 @@ defmodule Kickplan.Config do
     resolve(:adapter) |> with_opts()
   end
 
+  defp with_opts(mod) when is_atom(mod), do: {mod, []}
+  defp with_opts({mod}), do: {mod, []}
+  defp with_opts({_, _} = config), do: config
+
   @spec base_url() :: URI.t()
   def base_url() do
     resolve(:base_url, "") |> URI.parse()
   end
-
-  defp with_opts(mod) when is_atom(mod), do: {mod, []}
-  defp with_opts({mod}), do: {mod, []}
-  defp with_opts({_, _} = config), do: config
 
   @spec json_library() :: {atom, Keyword.t()}
   def json_library() do
