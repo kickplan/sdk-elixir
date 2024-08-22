@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "options": {
+        "with_body": "true"
+      },
+      "body": "{}",
+      "url": "https://demo-control.fly.dev/api/features/",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "User-Agent": "Kickplan/0.1.0 (sdk-elixir)"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "[{\"value\":false,\"key\":\"upload-contacts\"},{\"value\":false,\"key\":\"ai-llm-generation\"},{\"value\":false,\"key\":\"fancy\"},{\"value\":\"{\\n    \\\"Currency\\\": \\\"US Dollar (USD)\\\",\\n    \\\"Allowed Payment Gateways\\\": [\\\"PayPal\\\", \\\"Stripe\\\", \\\"Square\\\"]\\n  }\",\"key\":\"payment-configuration\"},{\"value\":0,\"key\":\"contact-limit\"}]",
+      "headers": {
+        "cache-control": "max-age=0, private, must-revalidate",
+        "content-length": "308",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 22 Aug 2024 19:19:14 GMT",
+        "server": "Fly/5e55b43a7 (2024-08-21)",
+        "x-request-id": "F-4jJk91UgTYSXkAAAyB",
+        "via": "1.1 fly.io",
+        "fly-request-id": "01J5XREQJRTKHBC3Y5CJQAPDYK-sea"
+      },
+      "status_code": 200
+    }
+  }
+]
