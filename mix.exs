@@ -26,9 +26,11 @@ defmodule Kickplan.MixProject do
 
   defp deps do
     [
-      {:jason, "~> 1.0", optional: true},
+      {:exvcr, "~> 0.11", only: :test},
+      {:finch, "~> 0.6", optional: true},
       {:hackney, "~> 1.9", optional: true},
-      {:finch, "~> 0.6", optional: true}
+      {:jason, "~> 1.0", optional: true},
+      {:nimble_options, "~> 1.1.0"}
     ]
   end
 

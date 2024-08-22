@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "options": {
+        "with_body": "true"
+      },
+      "body": "{}",
+      "url": "https://demo-control.fly.dev/api/metrics/flush",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "User-Agent": "Kickplan/0.1.0 (sdk-elixir)"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "cache-control": "max-age=0, private, must-revalidate",
+        "date": "Thu, 22 Aug 2024 22:37:26 GMT",
+        "server": "Fly/5e55b43a7 (2024-08-21)",
+        "x-request-id": "F-4t9xPC0bL6wOQAAA0B",
+        "via": "1.1 fly.io",
+        "fly-request-id": "01J5Y3SMMC67WZPQJYTVY1ZVP0-sea",
+        "content-length": "0"
+      },
+      "status_code": 202
+    }
+  }
+]
