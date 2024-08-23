@@ -16,12 +16,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - elixir: '1.17.2'
+            otp: '27.0.1'
           - elixir: '1.16.1'
             otp: '26.2.2'
-          - elixir: '1.14.5'
-            otp: '24.3.4.16'
-          - elixir: '1.12.3'
-            otp: '22.3.4.26'
+          - elixir: '1.15.8'
+            otp: '26.2.5.2'
 
     runs-on: ubuntu-20.04
 
