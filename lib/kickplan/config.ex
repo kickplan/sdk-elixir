@@ -3,11 +3,13 @@ defmodule Kickplan.Config do
   Utility to resolve app configurations.
   """
 
+  @doc false
   @spec access_token() :: String.t()
   def access_token() do
     resolve(:access_token)
   end
 
+  @doc false
   @spec adapter() :: {atom, Keyword.t()}
   def adapter() do
     resolve(:adapter) |> with_opts()
@@ -17,21 +19,25 @@ defmodule Kickplan.Config do
   defp with_opts({mod}), do: {mod, []}
   defp with_opts({_, _} = config), do: config
 
+  @doc false
   @spec base_url() :: URI.t()
   def base_url() do
     resolve(:base_url, "") |> URI.parse()
   end
 
+  @doc false
   @spec json_library() :: {atom, Keyword.t()}
   def json_library() do
     resolve(:json_library, Jason)
   end
 
+  @doc false
   @spec user_agent() :: String.t()
   def user_agent() do
     resolve(:user_agent, "Kickplan/#{Kickplan.version()} (sdk-elixir)")
   end
 
+  @doc false
   @spec resolve(atom, any) :: any
   def resolve(key, default \\ nil)
 

@@ -42,12 +42,8 @@ defmodule Kickplan.Response do
     %{resp | body: body}
   end
 
-  defp process_status(%Response{} = resp, status) when status in 200..299 do
-    %{resp | status: status, success?: true}
-  end
-
   defp process_status(%Response{} = resp, status) do
-    %{resp | status: status}
+    %{resp | status: status, success?: (status in 200..299)}
   end
 
   @doc """

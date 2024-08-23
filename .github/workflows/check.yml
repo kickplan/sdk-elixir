@@ -10,7 +10,7 @@ on:
 
 jobs:
   mix_check:
-    name: mix check (Elixir ${{matrix.elixir}}, OTP ${{matrix.otp}})
+    name: Elixir ${{matrix.elixir}}, OTP ${{matrix.otp}}
 
     strategy:
       fail-fast: false

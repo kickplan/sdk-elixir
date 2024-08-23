@@ -3,6 +3,7 @@ defmodule Kickplan.Application do
 
   use Application
 
+  @doc false
   def start(_type, _args) do
     Kickplan.Client.init()
 
