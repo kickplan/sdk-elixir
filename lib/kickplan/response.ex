@@ -43,7 +43,7 @@ defmodule Kickplan.Response do
   end
 
   defp process_status(%Response{} = resp, status) do
-    %{resp | status: status, success?: (status in 200..299)}
+    %{resp | status: status, success?: status in 200..299}
   end
 
   @doc """
