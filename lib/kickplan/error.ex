@@ -26,6 +26,7 @@ defmodule Kickplan.Error do
 
   defexception source: nil, code: nil, extra: %{}, request: nil, reason: nil
 
+  @doc false
   def build(req, reason) when is_binary(reason) do
     %Error{
       source: :adapter,
@@ -71,6 +72,7 @@ defmodule Kickplan.Error do
     {:unknown_error, "An unknown HTTP code of #{status} was received."}
   end
 
+  @doc false
   def message(%Error{request: %{url: url, method: method}, reason: reason}) do
     "#{inspect(reason)} (#{method |> to_string |> String.upcase()} #{to_string(url)})"
   end

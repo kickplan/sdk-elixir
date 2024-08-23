@@ -28,9 +28,6 @@ defmodule Kickplan.Client do
     )
   end
 
-  @doc """
-  TODO
-  """
   def post(path, body \\ %{}, headers \\ []) do
     request(
       method: :post,
