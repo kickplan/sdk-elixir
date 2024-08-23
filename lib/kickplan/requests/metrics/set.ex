@@ -17,5 +17,6 @@ defmodule Kickplan.Requests.Metrics.Set do
              time: [type: :any]
            )
 
+  @doc false
   def options, do: @options
 end
