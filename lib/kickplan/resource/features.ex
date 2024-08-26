@@ -12,7 +12,12 @@ defmodule Kickplan.Features do
   def resolve(key, _) when is_list(key) or is_map(key), do: resolve(nil, key)
 
   def resolve(key, params) do
-    with {:ok, resp} <- Client.post("features/#{key}", params) do
+    path =
+      ["features", key, "resolve"]
+      |> Enum.reject(&is_nil/1)
+      |> Enum.join("/")
+
+    with {:ok, resp} <- Client.post(path, params) do
       {:ok, resp |> Response.into(Schema.Resolution)}
     end
   end

@@ -5,7 +5,7 @@
         "with_body": "true"
       },
       "body": "{}",
-      "url": "https://demo-control.fly.dev/api/features/",
+      "url": "https://demo-control.fly.dev/api/features/resolve",
       "headers": {
         "Authorization": "***",
         "Content-Type": "application/json",
@@ -22,11 +22,11 @@
         "cache-control": "max-age=0, private, must-revalidate",
         "content-length": "308",
         "content-type": "application/json; charset=utf-8",
-        "date": "Thu, 22 Aug 2024 19:19:14 GMT",
-        "server": "Fly/5e55b43a7 (2024-08-21)",
-        "x-request-id": "F-4jJk91UgTYSXkAAAyB",
+        "date": "Mon, 26 Aug 2024 18:58:38 GMT",
+        "server": "Fly/21b3f2da (2024-08-24)",
+        "x-request-id": "F-9cWPS8oKftqV0AAA8B",
         "via": "1.1 fly.io",
-        "fly-request-id": "01J5XREQJRTKHBC3Y5CJQAPDYK-sea"
+        "fly-request-id": "01J680VX6EBS8X27Z7J6E9W1KA-sea"
       },
       "status_code": 200
     }
