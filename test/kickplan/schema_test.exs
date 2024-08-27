@@ -20,7 +20,7 @@ defmodule Kickplan.SchemaTest do
       assert %TestSchema{name: "Jim", age: 36} = TestSchema.from_json(data)
     end
 
-    test "failure: returns default struct when data is invalid" do
+    test "error: returns default struct when data is invalid" do
       struct = %TestSchema{}
 
       assert ^struct = TestSchema.from_json("invalid")

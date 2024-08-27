@@ -10,7 +10,8 @@ defmodule Kickplan.Requests.Metrics.Set do
              ],
              value: [
                type: {:or, [:float, :integer]},
-               required: true
+               required: false,
+               default: 1.0
              ],
              account_key: [type: :string],
              idempotency_key: [type: :string],
