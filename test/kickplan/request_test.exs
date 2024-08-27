@@ -39,25 +39,25 @@ defmodule Kickplan.RequestTest do
       assert %Request{path: "/features"} = Request.build(path: "/features")
     end
 
-    test "failure: validates request headers are enumerable" do
+    test "error: validates request headers are enumerable" do
       assert_raise ArgumentError, fn ->
         Request.build(headers: "invalid")
       end
     end
 
-    test "failure: validates request method" do
+    test "error: validates request method" do
       assert_raise ArgumentError, fn ->
         Request.build(method: :invalid)
       end
     end
 
-    test "failure: validates request params are enumerable" do
+    test "error: validates request params are enumerable" do
       assert_raise ArgumentError, fn ->
         Request.build(params: "invalid")
       end
     end
 
-    test "failure: validates request path is a string" do
+    test "error: validates request path is a string" do
       assert_raise ArgumentError, fn ->
         Request.build(path: :invalid)
       end

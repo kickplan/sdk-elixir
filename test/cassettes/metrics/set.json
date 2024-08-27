@@ -4,7 +4,7 @@
       "options": {
         "with_body": "true"
       },
-      "body": "{\"value\":3,\"time\":\"2024-08-22T21:40:19.923716Z\",\"key\":\"sdk_elixir_test\",\"account_key\":\"9a592f57-6da0-408e-99e7-8918b48a7dbe\",\"idempotency_key\":\"004b7f07-71fd-4ea5-a43c-dcde2516305b\"}",
+      "body": "{\"value\":1.0,\"key\":\"sdk_elixir_test\",\"account_key\":\"9a592f57-6da0-408e-99e7-8918b48a7dbe\"}",
       "url": "https://demo-control.fly.dev/api/metrics/set",
       "headers": {
         "Authorization": "***",
@@ -20,11 +20,42 @@
       "body": "",
       "headers": {
         "cache-control": "max-age=0, private, must-revalidate",
-        "date": "Thu, 22 Aug 2024 21:40:19 GMT",
-        "server": "Fly/5e55b43a7 (2024-08-21)",
-        "x-request-id": "F-4q2U-SUX7DPj0AAAzx",
+        "date": "Tue, 27 Aug 2024 21:23:24 GMT",
+        "server": "Fly/21b3f2da (2024-08-24)",
+        "x-request-id": "F--y09BUQelqULsAAAfB",
         "via": "1.1 fly.io",
-        "fly-request-id": "01J5Y0H2HYJAJ2PJVFS2D0TM7A-sea",
+        "fly-request-id": "01J6AVHP9MVGY6TZD9VJWS3F9X-sea",
+        "content-length": "0"
+      },
+      "status_code": 202
+    }
+  },
+  {
+    "request": {
+      "options": {
+        "with_body": "true"
+      },
+      "body": "{\"value\":3,\"key\":\"sdk_elixir_test\",\"account_key\":\"9a592f57-6da0-408e-99e7-8918b48a7dbe\",\"idempotency_key\":\"004b7f07-71fd-4ea5-a43c-dcde2516305b\"}",
+      "url": "https://demo-control.fly.dev/api/metrics/set",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "User-Agent": "Kickplan/0.1.0 (sdk-elixir)"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "cache-control": "max-age=0, private, must-revalidate",
+        "date": "Tue, 27 Aug 2024 21:23:24 GMT",
+        "server": "Fly/21b3f2da (2024-08-24)",
+        "x-request-id": "F--y09GE33WceT0AAAfR",
+        "via": "1.1 fly.io",
+        "fly-request-id": "01J6AVHPA8YETQ3K79VJARG1P4-sea",
         "content-length": "0"
       },
       "status_code": 202

@@ -28,7 +28,7 @@ defmodule Kickplan.ConfigTest do
       assert Config.resolve(:__fake_test, "default-value") == "default-value"
     end
 
-    test "failure: raises if the key isn't an atom" do
+    test "error: raises if the key isn't an atom" do
       assert_raise ArgumentError, ~r/to be an atom/, fn ->
         Config.resolve("__test")
       end
