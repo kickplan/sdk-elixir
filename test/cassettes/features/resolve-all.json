@@ -22,11 +22,11 @@
         "cache-control": "max-age=0, private, must-revalidate",
         "content-length": "308",
         "content-type": "application/json; charset=utf-8",
-        "date": "Mon, 26 Aug 2024 18:58:38 GMT",
-        "server": "Fly/21b3f2da (2024-08-24)",
-        "x-request-id": "F-9cWPS8oKftqV0AAA8B",
+        "date": "Fri, 20 Sep 2024 16:57:25 GMT",
+        "server": "Fly/a5e9a2096 (2024-09-17)",
+        "x-request-id": "F_cCPYNzHks9JREAAAhh",
         "via": "1.1 fly.io",
-        "fly-request-id": "01J680VX6EBS8X27Z7J6E9W1KA-sea"
+        "fly-request-id": "01J885VWJT8GP5XXHXFTXC8SJC-sea"
       },
       "status_code": 200
     }
