@@ -8,9 +8,12 @@ defmodule Kickplan.MixProject do
     [
       app: :kickplan,
       version: @version,
-      elixir: "~> 1.15",
+      name: "Kickplan",
+      description: "Kickplan SDK for Elixir",
+      elixir: "~> 1.18",
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
+      docs: docs(),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -38,7 +41,15 @@ defmodule Kickplan.MixProject do
       {:jason, "~> 1.0", optional: true},
       {:mix_audit, ">= 0.0.0", only: [:dev], runtime: false},
       {:nimble_options, "~> 1.1.0"},
+      {:req, "~> 0.5"},
       {:sobelow, ">= 0.0.0", only: [:dev], runtime: false}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "Kickplan",
+      source_ref: "v#{@version}"
     ]
   end
 

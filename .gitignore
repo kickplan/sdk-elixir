@@ -27,3 +27,5 @@ kickplan-*.tar
 
 .iex.exs
 config/config.secret.exs
+*.beam
+.elixir_ls/
