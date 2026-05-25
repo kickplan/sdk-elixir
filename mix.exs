@@ -34,13 +34,13 @@ defmodule Kickplan.MixProject do
       {:doctor, ">= 0.0.0", only: [:dev], runtime: false},
       {:ex_check, "~> 0.14.0", only: [:dev], runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
-      {:exvcr, "~> 0.11", only: :test},
-      {:finch, "~> 0.6", optional: true},
+      {:exvcr, "~> 0.15", only: :test},
+      {:finch, "~> 0.20", optional: true},
       {:gettext, ">= 0.0.0", only: [:dev], runtime: false},
-      {:hackney, "~> 1.9", optional: true},
-      {:jason, "~> 1.0", optional: true},
+      {:hackney, "~> 1.20", optional: true},
+      {:jason, "~> 1.4", optional: true},
       {:mix_audit, ">= 0.0.0", only: [:dev], runtime: false},
-      {:nimble_options, "~> 1.1.0"},
+      {:nimble_options, "~> 1.1"},
       {:req, "~> 0.5"},
       {:sobelow, ">= 0.0.0", only: [:dev], runtime: false}
     ]
